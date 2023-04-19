@@ -1,0 +1,11 @@
+export { default as Main } from './Main/index';
+export { default as Audio } from './Audio/index';
+export { default as Home } from './Home/index';
+export { default as Laptop } from './Laptop/index';
+export { default as Mobile } from './Mobile/index';
+export { default as Tablets } from './Tablets/index';
+export { default as Tivi } from './Tivi/index';
+export { default as WearableTech } from './WearableTech/index';
+export { default as ProductDetail } from './ProductDetail/index';
+export { default as Search } from './Search/index';
+export { default as Sale } from './Sale/index';

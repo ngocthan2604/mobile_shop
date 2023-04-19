@@ -1,0 +1,36 @@
+.wrapper {
+    padding-right: 50px;
+    animation: viewPage linear 0.2s;
+}
+
+.title {
+    top: 206px;
+    left: 50%;
+    font-size: 5rem;
+    position: absolute;
+    transform: translateX(-50%);
+    font-family: var(--font-bold);
+}
+
+.sort-by {
+    height: 40px;
+    width: 200px;
+    float: right;
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-top: 180px;
+    font-family: var(--font-main);
+
+    option:checked {
+        background-color: #e0e0e0;
+    }
+}
+
+@keyframes viewPage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,135 @@
+.wrapper {
+    display: flex;
+    min-width: 363px;
+    position: relative;
+    border-radius: 26px;
+    border: 1px solid transparent;
+
+    &:hover {
+        border-color: #000;
+    }
+
+    &:hover .search-input {
+        background-color: var(--white-color);
+    }
+}
+
+.search-input {
+    flex: 1;
+    outline: none;
+    font-size: 1.6rem;
+    font-family: var(--font-main);
+    padding: 12px 42px 12px 20px;
+    border: 1px solid transparent;
+    border-top-left-radius: 26px;
+    border-bottom-left-radius: 26px;
+    background-color: var(--bgrcolor-primary);
+
+    &::placeholder {
+        opacity: 1;
+        color: var(--text-color);
+    }
+
+    &:hover {
+        background-color: var(--white-color);
+    }
+}
+
+.clear-value {
+    top: 15px;
+    right: 88px;
+    width: 16px;
+    height: 16px;
+    opacity: 0.6;
+    display: flex;
+    cursor: pointer;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #e3e3e3;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.search-btn {
+    min-width: 76px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    color: var(--white-color);
+    border-top-right-radius: 26px;
+    border-bottom-right-radius: 26px;
+    background-color: var(--primary-color);
+
+    &:hover {
+        background-color: #000;
+    }
+}
+
+// Tippy for search result
+.search-result {
+    width: 370px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 2px #ccc;
+    font-family: var(--font-main);
+    background-color: var(--white-color);
+}
+
+.search-result-title {
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding: 20px 20px 10px;
+}
+
+.search-result-item {
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--text-color);
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    &:last-child {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+.result-item-img {
+    width: 55px;
+    height: 55px;
+}
+
+.result-item-content {
+    flex: 1;
+    display: flex;
+    padding-left: 12px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.result-item-title {
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-family: var(--font-main);
+}
+
+.result-item-desc {
+    opacity: 0.6;
+    font-size: 1.2rem;
+}
+
+.result-item-title,
+.result-item-desc {
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}

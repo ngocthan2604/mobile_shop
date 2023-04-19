@@ -1,0 +1,82 @@
+.wrapper {
+    margin: 44px;
+    padding: 60px;
+    background-color: var(--white-color);
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: var(--font-bold);
+}
+
+.sell-list {
+    display: flex;
+    list-style: none;
+}
+
+.sell-item {
+    width: 220px;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 42px;
+    border: 1px solid #edecec;
+
+    & a {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+}
+
+.item-sale {
+    top: 8px;
+    left: 8px;
+    z-index: 2;
+    font-size: 1.4rem;
+    padding: 4px 10px;
+    border-radius: 15px;
+    position: absolute;
+    color: var(--white-color);
+    background-color: var(--bgrcolor-btn);
+}
+
+.img-item {
+    height: 216px;
+    padding: 20px;
+    flex-wrap: wrap;
+    transition: all linear 0.2s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.name-item {
+    font-weight: 400;
+    font-size: 1.6rem;
+    padding: 16px 16px 5px 16px;
+    font-family: var(--font-main);
+}
+
+.money {
+    left: 16px;
+    bottom: 16px;
+    position: absolute;
+}
+
+.price,
+.dash-price {
+    font-size: 2rem;
+    color: #751fff;
+}
+
+.dash-price {
+    font-size: 1.8rem;
+    margin-right: 10px;
+    text-decoration: line-through;
+}
+
+.view-sell-btn {
+    margin: 60px auto 0;
+}

@@ -1,0 +1,49 @@
+.button {
+    width: 100%;
+    outline: none;
+    display: block;
+    cursor: pointer;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    font-family: var(--font-main);
+    transition: background-color linear 0.2s;
+}
+
+.button.primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.button.primary:hover {
+    background-color: #000;
+}
+
+.button.tiny {
+    height: 40px;
+    width: 142px;
+    line-height: 40px;
+}
+
+.button.small {
+    height: 50px;
+    width: 165px;
+}
+
+.button.medium {
+    height: 50px;
+    width: 180px;
+}
+
+.button.large {
+    height: 50px;
+    width: 200px;
+}
+
+.button.huge {
+    height: 50px;
+    width: 264px;
+}

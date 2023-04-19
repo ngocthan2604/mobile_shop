@@ -1,0 +1,19 @@
+.overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    position: fixed;
+    animation: ovelay linear 0.6s;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@keyframes ovelay {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,46 @@
+@import 'normalize.css';
+
+:root {
+    --text-color: #000000;
+    --white-color: #ffffff;
+    --primary-color: #751fff;
+    --bgrcolor-primary: #edecec;
+    --bgrcolor-btn: #d72d2d;
+
+    --font-main: avanir;
+    --font-bold: avanirbold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'avanir';
+    color: var(--text-color);
+    text-rendering: optimizeSpeed;
+}
+
+//font embeded
+@font-face {
+    font-family: avanir;
+    src: url('/assets/fonts/avanir.woff2');
+}
+
+@font-face {
+    font-family: avanirbold;
+    src: url('/assets/fonts/avanir-bold.woff2');
+}
+
+@font-face {
+    font-family: helvetical;
+    src: url('/assets/fonts/helvetical.woff');
+}

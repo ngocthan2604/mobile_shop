@@ -1,0 +1,13 @@
+.wrapper {
+    margin-top: 126px;
+    animation: viewLayout linear 0.8s;
+}
+
+@keyframes viewLayout {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,36 @@
+.navbar {
+    left: 0;
+    right: 0;
+    top: 80px;
+    z-index: 9;
+    height: 46px;
+    position: fixed;
+    transition: all linear 0.4s;
+    background-color: var(--bgrcolor-primary);
+}
+
+.navbar.hide {
+    transform: translateY(-126px);
+}
+
+.navbar-item {
+    height: 100%;
+    padding: 0 20px;
+    line-height: 46px;
+    font-size: 1.6rem;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--text-color);
+
+    &:first-child {
+        margin-left: 20px;
+    }
+}
+
+.navbar-item:hover {
+    color: var(--primary-color);
+}
+
+.navbar-item.active {
+    color: var(--primary-color);
+}
